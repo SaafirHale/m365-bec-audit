@@ -1,0 +1,40 @@
+{
+  "value": [
+    {
+      "MailboxOwner": "jamie.rowe@contoso.example.com", "Name": ".", "Enabled": true, "Priority": 1,
+      "From": [], "SubjectContainsWords": [], "SubjectOrBodyContainsWords": ["invoice", "payment", "wire transfer"], "BodyContainsWords": [],
+      "ForwardTo": [], "ForwardAsAttachmentTo": [], "RedirectTo": [],
+      "DeleteMessage": false, "SoftDeleteMessage": false, "MoveToFolder": "jamie.rowe@contoso.example.com:\\RSS Feeds", "MarkAsRead": true, "StopProcessingRules": true
+    },
+    {
+      "MailboxOwner": "quinn.harper@contoso.example.com", "Name": "Sync", "Enabled": true, "Priority": 1,
+      "From": [], "SubjectContainsWords": [], "SubjectOrBodyContainsWords": [], "BodyContainsWords": [],
+      "ForwardTo": [], "ForwardAsAttachmentTo": [], "RedirectTo": ["\"Quinn\" [SMTP:quinn.h.archive@mail.example.net]"],
+      "DeleteMessage": false, "SoftDeleteMessage": false, "MoveToFolder": null, "MarkAsRead": false, "StopProcessingRules": false
+    },
+    {
+      "MailboxOwner": "quinn.harper@contoso.example.com", "Name": "Newsletters", "Enabled": true, "Priority": 2,
+      "From": ["\"Example Updates\" [SMTP:news@updates.example.com]"], "SubjectContainsWords": [], "SubjectOrBodyContainsWords": [], "BodyContainsWords": [],
+      "ForwardTo": [], "ForwardAsAttachmentTo": [], "RedirectTo": [],
+      "DeleteMessage": false, "SoftDeleteMessage": false, "MoveToFolder": "quinn.harper@contoso.example.com:\\Inbox\\Newsletters", "MarkAsRead": false, "StopProcessingRules": false
+    },
+    {
+      "MailboxOwner": "sam.okafor@contoso.example.com", "Name": "Forward to manager", "Enabled": true, "Priority": 1,
+      "From": [], "SubjectContainsWords": ["timesheet"], "SubjectOrBodyContainsWords": [], "BodyContainsWords": [],
+      "ForwardTo": ["\"Taylor Brooks\" [SMTP:taylor.brooks@contoso.example.com]"], "ForwardAsAttachmentTo": [], "RedirectTo": [],
+      "DeleteMessage": false, "SoftDeleteMessage": false, "MoveToFolder": null, "MarkAsRead": false, "StopProcessingRules": false
+    },
+    {
+      "MailboxOwner": "avery.stone@contoso.example.com", "Name": "Clean up monitoring alerts", "Enabled": true, "Priority": 1,
+      "From": ["\"Monitoring\" [SMTP:alerts@monitoring.example.com]"], "SubjectContainsWords": [], "SubjectOrBodyContainsWords": [], "BodyContainsWords": [],
+      "ForwardTo": [], "ForwardAsAttachmentTo": [], "RedirectTo": [],
+      "DeleteMessage": true, "SoftDeleteMessage": false, "MoveToFolder": null, "MarkAsRead": false, "StopProcessingRules": false
+    },
+    {
+      "MailboxOwner": "taylor.brooks@contoso.example.com", "Name": "Old forward (disabled)", "Enabled": false, "Priority": 1,
+      "From": [], "SubjectContainsWords": [], "SubjectOrBodyContainsWords": [], "BodyContainsWords": [],
+      "ForwardTo": ["\"Personal\" [SMTP:taylor.personal@mail.example.net]"], "ForwardAsAttachmentTo": [], "RedirectTo": [],
+      "DeleteMessage": false, "SoftDeleteMessage": false, "MoveToFolder": null, "MarkAsRead": false, "StopProcessingRules": false
+    }
+  ]
+}

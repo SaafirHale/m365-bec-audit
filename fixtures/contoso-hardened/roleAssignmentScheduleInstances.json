@@ -1,0 +1,7 @@
+{
+  "value": [
+    { "id": "rasi-hard-01", "principalId": "a1000000-0000-4000-8000-000000000001", "roleDefinitionId": "62e90394-69f5-4237-9190-012177145e10", "directoryScopeId": "/", "startDateTime": "2024-01-08T09:00:00Z", "endDateTime": null, "assignmentType": "Assigned", "memberType": "Direct" },
+    { "id": "rasi-hard-02", "principalId": "a1000000-0000-4000-8000-000000000002", "roleDefinitionId": "62e90394-69f5-4237-9190-012177145e10", "directoryScopeId": "/", "startDateTime": "2024-01-08T09:05:00Z", "endDateTime": null, "assignmentType": "Assigned", "memberType": "Direct" },
+    { "id": "rasi-hard-03", "principalId": "a1000000-0000-4000-8000-000000000003", "roleDefinitionId": "62e90394-69f5-4237-9190-012177145e10", "directoryScopeId": "/", "startDateTime": "2026-10-01T08:05:00Z", "endDateTime": "2026-10-01T16:05:00Z", "assignmentType": "Activated", "memberType": "Direct" }
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "value": [
+    { "id": "resi-hard-03", "principalId": "a1000000-0000-4000-8000-000000000003", "roleDefinitionId": "62e90394-69f5-4237-9190-012177145e10", "directoryScopeId": "/", "startDateTime": "2024-01-08T10:00:00Z", "endDateTime": null, "memberType": "Direct" },
+    { "id": "resi-hard-04", "principalId": "a1000000-0000-4000-8000-000000000004", "roleDefinitionId": "29232cdf-9323-42fd-ade2-1d097af3e4de", "directoryScopeId": "/", "startDateTime": "2024-03-11T10:00:00Z", "endDateTime": null, "memberType": "Direct" }
+  ]
+}

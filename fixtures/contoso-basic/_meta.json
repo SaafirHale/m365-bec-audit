@@ -1,0 +1,4 @@
+{
+  "collectedAt": "2026-10-01T12:00:00Z",
+  "note": "Synthetic fixture written by hand for tests: a small tenant on security defaults without Entra ID P1/P2, so sign-in activity and PIM data are unavailable and inbox rules were skipped. Every name, address and identifier is invented."
+}

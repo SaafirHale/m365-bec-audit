@@ -1,0 +1,11 @@
+{
+  "id": "policyid",
+  "isEnabled": true,
+  "notifyReviewers": true,
+  "remindersEnabled": true,
+  "requestDurationInDays": 30,
+  "version": 1,
+  "reviewers": [
+    { "query": "/v1.0/users/a1000000-0000-4000-8000-000000000003", "queryType": "MicrosoftGraph", "queryRoot": null }
+  ]
+}

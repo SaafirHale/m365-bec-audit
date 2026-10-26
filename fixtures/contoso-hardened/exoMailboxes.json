@@ -1,0 +1,9 @@
+{
+  "value": [
+    { "DisplayName": "Avery Stone", "UserPrincipalName": "avery.stone@contoso.example.org", "PrimarySmtpAddress": "avery.stone@contoso.example.org", "ExternalDirectoryObjectId": "a1000000-0000-4000-8000-000000000003", "RecipientTypeDetails": "UserMailbox", "ForwardingSmtpAddress": null, "ForwardingAddress": null, "DeliverToMailboxAndForward": false },
+    { "DisplayName": "Dana Price", "UserPrincipalName": "dana.price@contoso.example.org", "PrimarySmtpAddress": "dana.price@contoso.example.org", "ExternalDirectoryObjectId": "a1000000-0000-4000-8000-000000000004", "RecipientTypeDetails": "UserMailbox", "ForwardingSmtpAddress": null, "ForwardingAddress": null, "DeliverToMailboxAndForward": false },
+    { "DisplayName": "Sam Okafor", "UserPrincipalName": "sam.okafor@contoso.example.org", "PrimarySmtpAddress": "sam.okafor@contoso.example.org", "ExternalDirectoryObjectId": "a1000000-0000-4000-8000-000000000005", "RecipientTypeDetails": "UserMailbox", "ForwardingSmtpAddress": null, "ForwardingAddress": null, "DeliverToMailboxAndForward": false },
+    { "DisplayName": "Taylor Brooks", "UserPrincipalName": "taylor.brooks@contoso.example.org", "PrimarySmtpAddress": "taylor.brooks@contoso.example.org", "ExternalDirectoryObjectId": "a1000000-0000-4000-8000-000000000006", "RecipientTypeDetails": "UserMailbox", "ForwardingSmtpAddress": null, "ForwardingAddress": null, "DeliverToMailboxAndForward": false },
+    { "DisplayName": "Jamie Rowe", "UserPrincipalName": "jamie.rowe@contoso.example.org", "PrimarySmtpAddress": "jamie.rowe@contoso.example.org", "ExternalDirectoryObjectId": "a1000000-0000-4000-8000-000000000007", "RecipientTypeDetails": "UserMailbox", "ForwardingSmtpAddress": null, "ForwardingAddress": null, "DeliverToMailboxAndForward": false }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "value": [
+    {
+      "id": "c1000000-0000-4000-8000-000000000001",
+      "displayName": "CA001 Block legacy authentication",
+      "state": "enabled",
+      "conditions": {
+        "clientAppTypes": ["exchangeActiveSync", "other"],
+        "applications": { "includeApplications": ["All"], "excludeApplications": [] },
+        "users": { "includeUsers": ["All"], "excludeUsers": ["a1000000-0000-4000-8000-000000000001", "a1000000-0000-4000-8000-000000000002"], "includeGroups": [], "excludeGroups": [], "includeRoles": [], "excludeRoles": [] },
+        "signInRiskLevels": [], "userRiskLevels": [], "platforms": null, "locations": null
+      },
+      "grantControls": { "operator": "OR", "builtInControls": ["block"], "authenticationStrength": null },
+      "sessionControls": null
+    },
+    {
+      "id": "c1000000-0000-4000-8000-000000000002",
+      "displayName": "CA002 Require MFA for all users",
+      "state": "enabled",
+      "conditions": {
+        "clientAppTypes": ["all"],
+        "applications": { "includeApplications": ["All"], "excludeApplications": [] },
+        "users": { "includeUsers": ["All"], "excludeUsers": ["a1000000-0000-4000-8000-000000000001", "a1000000-0000-4000-8000-000000000002"], "includeGroups": [], "excludeGroups": [], "includeRoles": [], "excludeRoles": [] },
+        "signInRiskLevels": [], "userRiskLevels": [], "platforms": null, "locations": null
+      },
+      "grantControls": { "operator": "OR", "builtInControls": ["mfa"], "authenticationStrength": null },
+      "sessionControls": null
+    },
+    {
+      "id": "c1000000-0000-4000-8000-000000000003",
+      "displayName": "CA003 Phishing-resistant MFA for admins",
+      "state": "enabled",
+      "conditions": {
+        "clientAppTypes": ["all"],
+        "applications": { "includeApplications": ["All"], "excludeApplications": [] },
+        "users": {
+          "includeUsers": [], "excludeUsers": ["a1000000-0000-4000-8000-000000000001", "a1000000-0000-4000-8000-000000000002"], "includeGroups": [], "excludeGroups": [],
+          "includeRoles": ["62e90394-69f5-4237-9190-012177145e10", "e8611ab8-c189-46e8-94e1-60213ab1f814", "29232cdf-9323-42fd-ade2-1d097af3e4de", "194ae4cb-b126-40b2-bd5b-6091b380977d", "b1be1c3e-b65d-4f19-8427-f6fa0d97feb9"],
+          "excludeRoles": []
+        },
+        "signInRiskLevels": [], "userRiskLevels": [], "platforms": null, "locations": null
+      },
+      "grantControls": { "operator": "OR", "builtInControls": [], "authenticationStrength": { "id": "00000000-0000-0000-0000-000000000004", "displayName": "Phishing-resistant MFA" } },
+      "sessionControls": null
+    },
+    {
+      "id": "c1000000-0000-4000-8000-000000000004",
+      "displayName": "CA004 Require MFA for medium and high sign-in risk",
+      "state": "enabled",
+      "conditions": {
+        "clientAppTypes": ["all"],
+        "applications": { "includeApplications": ["All"], "excludeApplications": [] },
+        "users": { "includeUsers": ["All"], "excludeUsers": ["a1000000-0000-4000-8000-000000000001", "a1000000-0000-4000-8000-000000000002"], "includeGroups": [], "excludeGroups": [], "includeRoles": [], "excludeRoles": [] },
+        "signInRiskLevels": ["high", "medium"], "userRiskLevels": [], "platforms": null, "locations": null
+      },
+      "grantControls": { "operator": "OR", "builtInControls": ["mfa"], "authenticationStrength": null },
+      "sessionControls": { "signInFrequency": { "frequencyInterval": "everyTime", "isEnabled": true } }
+    },
+    {
+      "id": "c1000000-0000-4000-8000-000000000005",
+      "displayName": "CA005 Secure password change for high user risk",
+      "state": "enabled",
+      "conditions": {
+        "clientAppTypes": ["all"],
+        "applications": { "includeApplications": ["All"], "excludeApplications": [] },
+        "users": { "includeUsers": ["All"], "excludeUsers": ["a1000000-0000-4000-8000-000000000001", "a1000000-0000-4000-8000-000000000002"], "includeGroups": [], "excludeGroups": [], "includeRoles": [], "excludeRoles": [] },
+        "signInRiskLevels": [], "userRiskLevels": ["high"], "platforms": null, "locations": null
+      },
+      "grantControls": { "operator": "AND", "builtInControls": ["mfa", "passwordChange"], "authenticationStrength": null },
+      "sessionControls": { "signInFrequency": { "frequencyInterval": "everyTime", "isEnabled": true } }
+    }
+  ]
+}

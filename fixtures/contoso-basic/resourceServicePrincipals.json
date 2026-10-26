@@ -1,0 +1,6 @@
+{
+  "value": [
+    { "id": "e2000000-0000-4000-8000-000000000001", "appId": "00000003-0000-0000-c000-000000000000", "displayName": "Microsoft Graph", "appRoles": [] },
+    { "id": "e2000000-0000-4000-8000-000000000002", "appId": "00000002-0000-0ff1-ce00-000000000000", "displayName": "Office 365 Exchange Online", "appRoles": [] }
+  ]
+}

@@ -1,0 +1,5 @@
+{
+  "value": [
+    { "Name": "Default", "DomainName": "*", "AutoForwardEnabled": true }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "value": [
+    {
+      "MailboxOwner": "sam.okafor@contoso.example.org", "Name": "Forward timesheets to manager", "Enabled": true, "Priority": 1,
+      "From": [], "SubjectContainsWords": ["timesheet"], "SubjectOrBodyContainsWords": [], "BodyContainsWords": [],
+      "ForwardTo": ["\"Taylor Brooks\" [SMTP:taylor.brooks@contoso.example.org]"], "ForwardAsAttachmentTo": [], "RedirectTo": [],
+      "DeleteMessage": false, "SoftDeleteMessage": false, "MoveToFolder": null, "MarkAsRead": false, "StopProcessingRules": false
+    },
+    {
+      "MailboxOwner": "jamie.rowe@contoso.example.org", "Name": "Supplier invoices", "Enabled": true, "Priority": 1,
+      "From": [], "SubjectContainsWords": ["invoice"], "SubjectOrBodyContainsWords": [], "BodyContainsWords": [],
+      "ForwardTo": [], "ForwardAsAttachmentTo": [], "RedirectTo": [],
+      "DeleteMessage": false, "SoftDeleteMessage": false, "MoveToFolder": "jamie.rowe@contoso.example.org:\\Inbox\\Invoices", "MarkAsRead": false, "StopProcessingRules": false
+    }
+  ]
+}

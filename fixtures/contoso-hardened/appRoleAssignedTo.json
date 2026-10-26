@@ -1,0 +1,5 @@
+{
+  "value": [
+    { "id": "ara-hard-01", "appRoleId": "df021288-bdef-4463-88db-98f22de89214", "principalId": "e1000000-0000-4000-8000-000000000012", "principalType": "ServicePrincipal", "principalDisplayName": "HR Directory Sync", "resourceId": "e1000000-0000-4000-8000-000000000001", "resourceDisplayName": "Microsoft Graph", "createdDateTime": "2024-03-02T10:00:00Z" }
+  ]
+}

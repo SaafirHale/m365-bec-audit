@@ -1,0 +1,7 @@
+{
+  "value": [
+    { "id": "a2000000-0000-4000-8000-000000000001", "userPrincipalName": "owner@basic.example.com", "userDisplayName": "Owner Account", "userType": "member", "isAdmin": true, "isMfaRegistered": true, "isMfaCapable": true, "isPasswordlessCapable": false, "methodsRegistered": ["microsoftAuthenticatorPush"] },
+    { "id": "a2000000-0000-4000-8000-000000000002", "userPrincipalName": "robin.vale@basic.example.com", "userDisplayName": "Robin Vale", "userType": "member", "isAdmin": false, "isMfaRegistered": true, "isMfaCapable": true, "isPasswordlessCapable": false, "methodsRegistered": ["microsoftAuthenticatorPush"] },
+    { "id": "a2000000-0000-4000-8000-000000000003", "userPrincipalName": "kai.mercer@basic.example.com", "userDisplayName": "Kai Mercer", "userType": "member", "isAdmin": false, "isMfaRegistered": false, "isMfaCapable": false, "isPasswordlessCapable": false, "methodsRegistered": [] }
+  ]
+}

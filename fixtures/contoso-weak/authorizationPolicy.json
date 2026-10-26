@@ -1,0 +1,15 @@
+{
+  "id": "authorizationPolicy",
+  "displayName": "Authorization Policy",
+  "allowInvitesFrom": "everyone",
+  "guestUserRoleId": "10dae51f-b6af-4016-8d66-8c2a99b929b3",
+  "defaultUserRolePermissions": {
+    "allowedToCreateApps": true,
+    "allowedToCreateSecurityGroups": true,
+    "allowedToReadOtherUsers": true,
+    "permissionGrantPoliciesAssigned": [
+      "ManagePermissionGrantsForSelf.microsoft-user-default-legacy",
+      "ManagePermissionGrantsForOwnedResource.DeveloperConsent"
+    ]
+  }
+}

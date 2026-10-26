@@ -1,0 +1,12 @@
+{
+  "value": [
+    {
+      "id": "9a7b6c5d-4e3f-4a1b-8c2d-0e1f2a3b4c5d",
+      "displayName": "Contoso Basic (synthetic)",
+      "verifiedDomains": [
+        { "name": "basic.example.com", "isDefault": true, "isInitial": false, "type": "Managed" },
+        { "name": "contosobasic.onmicrosoft.com", "isDefault": false, "isInitial": true, "type": "Managed" }
+      ]
+    }
+  ]
+}

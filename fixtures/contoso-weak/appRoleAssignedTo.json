@@ -1,0 +1,7 @@
+{
+  "value": [
+    { "id": "ara-weak-01", "appRoleId": "e2a3a72e-5f79-4c64-b1b1-878b674786c9", "principalId": "e0000000-0000-4000-8000-000000000011", "principalType": "ServicePrincipal", "principalDisplayName": "Invoice Automation Connector", "resourceId": "e0000000-0000-4000-8000-000000000001", "resourceDisplayName": "Microsoft Graph", "createdDateTime": "2026-08-14T22:03:00Z" },
+    { "id": "ara-weak-02", "appRoleId": "dc890d15-9560-4a4c-9b7f-a736ec74ec40", "principalId": "e0000000-0000-4000-8000-000000000011", "principalType": "ServicePrincipal", "principalDisplayName": "Invoice Automation Connector", "resourceId": "e0000000-0000-4000-8000-000000000002", "resourceDisplayName": "Office 365 Exchange Online", "createdDateTime": "2026-08-14T22:03:30Z" },
+    { "id": "ara-weak-03", "appRoleId": "df021288-bdef-4463-88db-98f22de89214", "principalId": "e0000000-0000-4000-8000-000000000012", "principalType": "ServicePrincipal", "principalDisplayName": "HR Directory Sync", "resourceId": "e0000000-0000-4000-8000-000000000001", "resourceDisplayName": "Microsoft Graph", "createdDateTime": "2024-03-02T10:00:00Z" }
+  ]
+}

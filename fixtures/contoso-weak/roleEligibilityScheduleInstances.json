@@ -1,0 +1,5 @@
+{
+  "value": [
+    { "id": "resi-weak-13", "principalId": "a0000000-0000-4000-8000-000000000013", "roleDefinitionId": "62e90394-69f5-4237-9190-012177145e10", "directoryScopeId": "/", "startDateTime": "2025-06-02T10:00:00Z", "endDateTime": null, "memberType": "Direct" }
+  ]
+}

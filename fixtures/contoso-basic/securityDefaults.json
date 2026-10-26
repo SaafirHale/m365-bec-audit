@@ -1,0 +1,6 @@
+{
+  "id": "00000000-0000-0000-0000-000000000005",
+  "displayName": "Security Defaults",
+  "description": "Security defaults is a set of basic identity security mechanisms recommended by Microsoft.",
+  "isEnabled": true
+}

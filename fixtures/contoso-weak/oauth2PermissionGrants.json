@@ -1,0 +1,8 @@
+{
+  "value": [
+    { "id": "grant-weak-01", "clientId": "e0000000-0000-4000-8000-000000000010", "consentType": "Principal", "principalId": "a0000000-0000-4000-8000-000000000009", "resourceId": "e0000000-0000-4000-8000-000000000001", "scope": "User.Read Mail.Read Mail.Send offline_access" },
+    { "id": "grant-weak-02", "clientId": "e0000000-0000-4000-8000-000000000010", "consentType": "Principal", "principalId": "a0000000-0000-4000-8000-000000000011", "resourceId": "e0000000-0000-4000-8000-000000000001", "scope": "User.Read Mail.Read Mail.Send offline_access" },
+    { "id": "grant-weak-03", "clientId": "e0000000-0000-4000-8000-000000000003", "consentType": "Principal", "principalId": "a0000000-0000-4000-8000-000000000001", "resourceId": "e0000000-0000-4000-8000-000000000001", "scope": "User.Read Mail.ReadWrite" },
+    { "id": "grant-weak-04", "clientId": "e0000000-0000-4000-8000-000000000012", "consentType": "AllPrincipals", "principalId": null, "resourceId": "e0000000-0000-4000-8000-000000000001", "scope": "openid profile User.Read" }
+  ]
+}

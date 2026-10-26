@@ -1,0 +1,5 @@
+{
+  "value": [
+    { "id": "ra-basic-01", "principalId": "a2000000-0000-4000-8000-000000000001", "roleDefinitionId": "62e90394-69f5-4237-9190-012177145e10", "directoryScopeId": "/", "principal": { "@odata.type": "#microsoft.graph.user", "id": "a2000000-0000-4000-8000-000000000001", "displayName": "Owner Account", "userPrincipalName": "owner@basic.example.com" } }
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "value": [
+    { "DomainName": "contoso.example.com", "DomainType": "Authoritative", "Default": true },
+    { "DomainName": "contosoweak.onmicrosoft.com", "DomainType": "Authoritative", "Default": false }
+  ]
+}

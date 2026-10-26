@@ -1,0 +1,10 @@
+{
+  "value": [
+    { "id": "ra-weak-01", "principalId": "a0000000-0000-4000-8000-000000000001", "roleDefinitionId": "62e90394-69f5-4237-9190-012177145e10", "directoryScopeId": "/", "principal": { "@odata.type": "#microsoft.graph.user", "id": "a0000000-0000-4000-8000-000000000001", "displayName": "Avery Stone", "userPrincipalName": "avery.stone@contoso.example.com" } },
+    { "id": "ra-weak-02", "principalId": "a0000000-0000-4000-8000-000000000002", "roleDefinitionId": "62e90394-69f5-4237-9190-012177145e10", "directoryScopeId": "/", "principal": { "@odata.type": "#microsoft.graph.user", "id": "a0000000-0000-4000-8000-000000000002", "displayName": "Jordan Pike", "userPrincipalName": "jordan.pike@contoso.example.com" } },
+    { "id": "ra-weak-03", "principalId": "a0000000-0000-4000-8000-000000000003", "roleDefinitionId": "62e90394-69f5-4237-9190-012177145e10", "directoryScopeId": "/", "principal": { "@odata.type": "#microsoft.graph.user", "id": "a0000000-0000-4000-8000-000000000003", "displayName": "Riley Chen", "userPrincipalName": "riley.chen@contoso.example.com" } },
+    { "id": "ra-weak-04", "principalId": "a0000000-0000-4000-8000-000000000004", "roleDefinitionId": "62e90394-69f5-4237-9190-012177145e10", "directoryScopeId": "/", "principal": { "@odata.type": "#microsoft.graph.user", "id": "a0000000-0000-4000-8000-000000000004", "displayName": "Morgan Ellis", "userPrincipalName": "morgan.ellis@contoso.example.com" } },
+    { "id": "ra-weak-05", "principalId": "a0000000-0000-4000-8000-000000000005", "roleDefinitionId": "62e90394-69f5-4237-9190-012177145e10", "directoryScopeId": "/", "principal": { "@odata.type": "#microsoft.graph.user", "id": "a0000000-0000-4000-8000-000000000005", "displayName": "Casey Nguyen", "userPrincipalName": "casey.nguyen@contoso.example.com" } },
+    { "id": "ra-weak-06", "principalId": "a0000000-0000-4000-8000-000000000006", "roleDefinitionId": "29232cdf-9323-42fd-ade2-1d097af3e4de", "directoryScopeId": "/", "principal": { "@odata.type": "#microsoft.graph.user", "id": "a0000000-0000-4000-8000-000000000006", "displayName": "Dana Price", "userPrincipalName": "dana.price@contoso.example.com" } }
+  ]
+}

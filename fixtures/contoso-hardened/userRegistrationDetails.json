@@ -1,0 +1,11 @@
+{
+  "value": [
+    { "id": "a1000000-0000-4000-8000-000000000001", "userPrincipalName": "bg.one@contosohardened.onmicrosoft.com", "userDisplayName": "Break Glass 1", "userType": "member", "isAdmin": true, "isMfaRegistered": true, "isMfaCapable": true, "isPasswordlessCapable": true, "methodsRegistered": ["fido2SecurityKey"] },
+    { "id": "a1000000-0000-4000-8000-000000000002", "userPrincipalName": "bg.two@contosohardened.onmicrosoft.com", "userDisplayName": "Break Glass 2", "userType": "member", "isAdmin": true, "isMfaRegistered": true, "isMfaCapable": true, "isPasswordlessCapable": true, "methodsRegistered": ["fido2SecurityKey"] },
+    { "id": "a1000000-0000-4000-8000-000000000003", "userPrincipalName": "avery.stone@contoso.example.org", "userDisplayName": "Avery Stone", "userType": "member", "isAdmin": true, "isMfaRegistered": true, "isMfaCapable": true, "isPasswordlessCapable": true, "methodsRegistered": ["passKeyDeviceBoundAuthenticator", "microsoftAuthenticatorPush"] },
+    { "id": "a1000000-0000-4000-8000-000000000004", "userPrincipalName": "dana.price@contoso.example.org", "userDisplayName": "Dana Price", "userType": "member", "isAdmin": true, "isMfaRegistered": true, "isMfaCapable": true, "isPasswordlessCapable": true, "methodsRegistered": ["windowsHelloForBusiness", "microsoftAuthenticatorPush"] },
+    { "id": "a1000000-0000-4000-8000-000000000005", "userPrincipalName": "sam.okafor@contoso.example.org", "userDisplayName": "Sam Okafor", "userType": "member", "isAdmin": false, "isMfaRegistered": true, "isMfaCapable": true, "isPasswordlessCapable": false, "methodsRegistered": ["microsoftAuthenticatorPush"] },
+    { "id": "a1000000-0000-4000-8000-000000000006", "userPrincipalName": "taylor.brooks@contoso.example.org", "userDisplayName": "Taylor Brooks", "userType": "member", "isAdmin": false, "isMfaRegistered": true, "isMfaCapable": true, "isPasswordlessCapable": false, "methodsRegistered": ["microsoftAuthenticatorPush", "softwareOneTimePasscode"] },
+    { "id": "a1000000-0000-4000-8000-000000000007", "userPrincipalName": "jamie.rowe@contoso.example.org", "userDisplayName": "Jamie Rowe", "userType": "member", "isAdmin": false, "isMfaRegistered": true, "isMfaCapable": true, "isPasswordlessCapable": false, "methodsRegistered": ["microsoftAuthenticatorPush"] }
+  ]
+}

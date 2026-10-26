@@ -1,0 +1,12 @@
+{
+  "value": [
+    {
+      "id": "5e8f2a91-3c4d-4b6e-8f7a-9b0c1d2e3f40",
+      "displayName": "Contoso Hardened (synthetic)",
+      "verifiedDomains": [
+        { "name": "contoso.example.org", "isDefault": true, "isInitial": false, "type": "Managed" },
+        { "name": "contosohardened.onmicrosoft.com", "isDefault": false, "isInitial": true, "type": "Managed" }
+      ]
+    }
+  ]
+}

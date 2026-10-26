@@ -1,0 +1,7 @@
+{
+  "value": [
+    { "DisplayName": "Owner Account", "UserPrincipalName": "owner@basic.example.com", "PrimarySmtpAddress": "owner@basic.example.com", "ExternalDirectoryObjectId": "a2000000-0000-4000-8000-000000000001", "RecipientTypeDetails": "UserMailbox", "ForwardingSmtpAddress": null, "ForwardingAddress": null, "DeliverToMailboxAndForward": false },
+    { "DisplayName": "Robin Vale", "UserPrincipalName": "robin.vale@basic.example.com", "PrimarySmtpAddress": "robin.vale@basic.example.com", "ExternalDirectoryObjectId": "a2000000-0000-4000-8000-000000000002", "RecipientTypeDetails": "UserMailbox", "ForwardingSmtpAddress": null, "ForwardingAddress": null, "DeliverToMailboxAndForward": false },
+    { "DisplayName": "Kai Mercer", "UserPrincipalName": "kai.mercer@basic.example.com", "PrimarySmtpAddress": "kai.mercer@basic.example.com", "ExternalDirectoryObjectId": "a2000000-0000-4000-8000-000000000003", "RecipientTypeDetails": "UserMailbox", "ForwardingSmtpAddress": null, "ForwardingAddress": null, "DeliverToMailboxAndForward": false }
+  ]
+}

@@ -1,0 +1,7 @@
+# Generated reports and test results
+out/
+m365-bec-audit-output/
+*.xml
+
+# Never commit recordings of a real tenant
+recordings/

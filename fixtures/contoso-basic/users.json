@@ -1,0 +1,8 @@
+{
+  "value": [
+    { "id": "a2000000-0000-4000-8000-000000000001", "displayName": "Owner Account", "userPrincipalName": "owner@basic.example.com", "mail": "owner@basic.example.com", "userType": "Member", "accountEnabled": true, "createdDateTime": "2025-05-05T09:00:00Z", "onPremisesSyncEnabled": null, "externalUserState": null, "externalUserStateChangeDateTime": null },
+    { "id": "a2000000-0000-4000-8000-000000000002", "displayName": "Robin Vale", "userPrincipalName": "robin.vale@basic.example.com", "mail": "robin.vale@basic.example.com", "userType": "Member", "accountEnabled": true, "createdDateTime": "2025-05-06T09:00:00Z", "onPremisesSyncEnabled": null, "externalUserState": null, "externalUserStateChangeDateTime": null },
+    { "id": "a2000000-0000-4000-8000-000000000003", "displayName": "Kai Mercer", "userPrincipalName": "kai.mercer@basic.example.com", "mail": "kai.mercer@basic.example.com", "userType": "Member", "accountEnabled": true, "createdDateTime": "2026-09-24T09:00:00Z", "onPremisesSyncEnabled": null, "externalUserState": null, "externalUserStateChangeDateTime": null },
+    { "id": "b2000000-0000-4000-8000-000000000021", "displayName": "Bookkeeper (external)", "userPrincipalName": "books_mail.example.net#EXT#@contosobasic.onmicrosoft.com", "mail": "books@mail.example.net", "userType": "Guest", "accountEnabled": true, "createdDateTime": "2025-06-01T09:00:00Z", "onPremisesSyncEnabled": null, "externalUserState": "Accepted", "externalUserStateChangeDateTime": "2025-06-01T10:00:00Z" }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "id": "policyid",
+  "isEnabled": false,
+  "notifyReviewers": false,
+  "remindersEnabled": false,
+  "requestDurationInDays": 0,
+  "version": 0,
+  "reviewers": []
+}

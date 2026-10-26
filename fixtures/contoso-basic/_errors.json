@@ -1,0 +1,5 @@
+{
+  "roleAssignmentScheduleInstances": "Synthetic recorded error: PIM data is unavailable in this tenant (requires Microsoft Entra ID P2).",
+  "roleEligibilityScheduleInstances": "Synthetic recorded error: PIM data is unavailable in this tenant (requires Microsoft Entra ID P2).",
+  "exoInboxRules": "Skipped by request."
+}

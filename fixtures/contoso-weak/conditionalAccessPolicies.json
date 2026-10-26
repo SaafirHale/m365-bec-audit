@@ -1,0 +1,43 @@
+{
+  "value": [
+    {
+      "id": "c0000000-0000-4000-8000-000000000001",
+      "displayName": "Require MFA for admins",
+      "state": "enabledForReportingButNotEnforced",
+      "conditions": {
+        "clientAppTypes": ["all"],
+        "applications": { "includeApplications": ["All"], "excludeApplications": [] },
+        "users": { "includeUsers": [], "excludeUsers": [], "includeGroups": [], "excludeGroups": [], "includeRoles": ["62e90394-69f5-4237-9190-012177145e10"], "excludeRoles": [] },
+        "signInRiskLevels": [], "userRiskLevels": [], "platforms": null, "locations": null
+      },
+      "grantControls": { "operator": "OR", "builtInControls": ["mfa"], "authenticationStrength": null },
+      "sessionControls": null
+    },
+    {
+      "id": "c0000000-0000-4000-8000-000000000002",
+      "displayName": "Block legacy authentication",
+      "state": "disabled",
+      "conditions": {
+        "clientAppTypes": ["exchangeActiveSync", "other"],
+        "applications": { "includeApplications": ["All"], "excludeApplications": [] },
+        "users": { "includeUsers": ["All"], "excludeUsers": [], "includeGroups": [], "excludeGroups": [], "includeRoles": [], "excludeRoles": [] },
+        "signInRiskLevels": [], "userRiskLevels": [], "platforms": null, "locations": null
+      },
+      "grantControls": { "operator": "OR", "builtInControls": ["block"], "authenticationStrength": null },
+      "sessionControls": null
+    },
+    {
+      "id": "c0000000-0000-4000-8000-000000000003",
+      "displayName": "Require MFA for Finance",
+      "state": "enabled",
+      "conditions": {
+        "clientAppTypes": ["all"],
+        "applications": { "includeApplications": ["All"], "excludeApplications": [] },
+        "users": { "includeUsers": [], "excludeUsers": [], "includeGroups": ["d0000000-0000-4000-8000-000000000001"], "excludeGroups": [], "includeRoles": [], "excludeRoles": [] },
+        "signInRiskLevels": [], "userRiskLevels": [], "platforms": null, "locations": null
+      },
+      "grantControls": { "operator": "OR", "builtInControls": ["mfa"], "authenticationStrength": null },
+      "sessionControls": null
+    }
+  ]
+}
