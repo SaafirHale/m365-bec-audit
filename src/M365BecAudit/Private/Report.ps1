@@ -55,7 +55,11 @@ function ConvertTo-EvidenceTable {
     }
     $sb = New-Object System.Text.StringBuilder
     [void]$sb.Append('<div class="table-wrap"><table><thead><tr>')
-    foreach ($c in $columns) { [void]$sb.Append("<th>$(ConvertTo-HtmlText $c)</th>") }
+    foreach ($c in $columns) {
+        # PhishingResistant -> Phishing Resistant
+        $label = $c -creplace '(?<=[a-z])(?=[A-Z])', ' '
+        [void]$sb.Append("<th>$(ConvertTo-HtmlText $label)</th>")
+    }
     [void]$sb.Append('</tr></thead><tbody>')
     foreach ($row in $rows) {
         [void]$sb.Append('<tr>')
