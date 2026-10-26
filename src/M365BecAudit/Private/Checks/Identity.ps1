@@ -73,7 +73,7 @@ function Test-BecAdminPhishingResistantMfa {
                 $_.state -eq 'enabled' -and
                 $_.grantControls.authenticationStrength.id -eq $script:PhishingResistantStrengthId -and
                 ((@($_.conditions.users.includeRoles) | Where-Object { $script:PrivilegedRoles.Contains([string]$_) }).Count -gt 0 -or
-                    @($_.conditions.users.includeUsers) -contains 'All')
+                @($_.conditions.users.includeUsers) -contains 'All')
             })
     }
     $policyNote = if ($enforced.Count) { " Enforced by: $(($enforced | ForEach-Object { $_.displayName }) -join ', ')." } else { ' No enabled Conditional Access policy requires the phishing-resistant MFA strength for admin roles.' }

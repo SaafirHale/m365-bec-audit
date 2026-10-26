@@ -3,10 +3,10 @@
 
 function Get-InternalDomain {
     [CmdletBinding()]
-    [OutputType([string[]])]
+    [OutputType([string])]
     param($Snapshot)
 
-    @(Get-SnapshotData -Snapshot $Snapshot -Name 'exoAcceptedDomains' | ForEach-Object { ([string]$_.DomainName).ToLowerInvariant() })
+    Get-SnapshotData -Snapshot $Snapshot -Name 'exoAcceptedDomains' | ForEach-Object { ([string]$_.DomainName).ToLowerInvariant() }
 }
 
 function Test-BecMailboxForwarding {

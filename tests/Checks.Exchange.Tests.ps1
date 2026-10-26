@@ -1,7 +1,11 @@
+[Diagnostics.CodeAnalysis.SuppressMessageAttribute('PSUseDeclaredVarsMoreThanAssignments', '', Justification = 'Pester shares variables between BeforeAll and It blocks.')]
+param()
+
 BeforeAll {
     . (Join-Path -Path $PSScriptRoot -ChildPath 'TestHelpers.ps1')
 
     function New-TestRule {
+        [Diagnostics.CodeAnalysis.SuppressMessageAttribute('PSUseShouldProcessForStateChangingFunctions', '', Justification = 'Builds an in-memory test object.')]
         param([string]$Name = 'Rule', [hashtable]$Set = @{})
         $rule = [ordered]@{
             MailboxOwner = 'sam.okafor@contoso.example.com'; Name = $Name; Enabled = $true; Priority = 1

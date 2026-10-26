@@ -16,6 +16,7 @@ function Invoke-TestCheck {
 }
 
 function Remove-TestDataset {
+    [Diagnostics.CodeAnalysis.SuppressMessageAttribute('PSUseShouldProcessForStateChangingFunctions', '', Justification = 'Edits an in-memory test snapshot.')]
     param($Snapshot, [string] $Name, [string] $Reason = 'Removed by test.')
     $Snapshot.Datasets.Remove($Name)
     $Snapshot.Errors[$Name] = $Reason
@@ -23,6 +24,7 @@ function Remove-TestDataset {
 
 function New-TestPolicy {
     # A minimal Conditional Access policy in Graph's shape.
+    [Diagnostics.CodeAnalysis.SuppressMessageAttribute('PSUseShouldProcessForStateChangingFunctions', '', Justification = 'Builds an in-memory test object.')]
     param(
         [string] $Name = 'Test policy',
         [string] $State = 'enabled',

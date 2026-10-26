@@ -1,3 +1,6 @@
+[Diagnostics.CodeAnalysis.SuppressMessageAttribute('PSUseDeclaredVarsMoreThanAssignments', '', Justification = 'Pester shares variables between BeforeAll and It blocks.')]
+param()
+
 BeforeDiscovery {
     # The per-check cases below are generated from the module at discovery time.
     Import-Module (Join-Path -Path (Split-Path -Path $PSScriptRoot -Parent) -ChildPath 'src\M365BecAudit\M365BecAudit.psd1') -Force

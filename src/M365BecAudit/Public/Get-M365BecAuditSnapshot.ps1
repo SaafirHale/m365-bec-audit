@@ -26,14 +26,14 @@ function Get-M365BecAuditSnapshot {
         [Parameter(Mandatory, ParameterSetName = 'Collector')] $Collector
     )
 
-    switch ($PSCmdlet.ParameterSetName) {
-        'Fixture' { $Collector = Get-AuditCollector -FixturePath $FixturePath }
-        'Live' {
-            if (-not (Get-Command -Name 'Get-MgContext' -ErrorAction SilentlyContinue) -or -not (Get-MgContext)) {
-                throw 'Not connected to Microsoft Graph. Run Connect-M365BecAudit first.'
-            }
-            $Collector = Get-AuditCollector -Live -SkipExchange:$SkipExchange -SkipInboxRules:$SkipInboxRules
+    if ($PSCmdlet.ParameterSetName -eq 'Fixture') {
+        $Collector = Get-AuditCollector -FixturePath $FixturePath
+    }
+    elseif ($Live) {
+        if (-not (Get-Command -Name 'Get-MgContext' -ErrorAction SilentlyContinue) -or -not (Get-MgContext)) {
+            throw 'Not connected to Microsoft Graph. Run Connect-M365BecAudit first.'
         }
+        $Collector = Get-AuditCollector -Live -SkipExchange:$SkipExchange -SkipInboxRules:$SkipInboxRules
     }
     Get-TenantSnapshot -Collector $Collector
 }

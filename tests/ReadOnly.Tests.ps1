@@ -1,3 +1,6 @@
+[Diagnostics.CodeAnalysis.SuppressMessageAttribute('PSUseDeclaredVarsMoreThanAssignments', '', Justification = 'Pester shares variables between BeforeAll and It blocks.')]
+param()
+
 BeforeAll {
     . (Join-Path -Path $PSScriptRoot -ChildPath 'TestHelpers.ps1')
 }
@@ -23,7 +26,7 @@ Describe 'Least-privilege, read-only access' {
             Get-AuditDatasetCatalog | ForEach-Object {
                 $_.Fetch.Ast.FindAll({ param($n) $n -is [System.Management.Automation.Language.CommandAst] }, $true) |
                     ForEach-Object { $_.GetCommandName() }
-            } | Where-Object { $_ } | Sort-Object -Unique
+                } | Where-Object { $_ } | Sort-Object -Unique
         }
         foreach ($c in $commands) {
             ($c -like 'Get-*' -or $allowed -contains $c) | Should -BeTrue -Because "collection must stay read-only, but it calls $c"

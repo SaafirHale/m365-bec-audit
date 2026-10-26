@@ -52,7 +52,7 @@ function Get-AuditCollector {
         [Parameter(ParameterSetName = 'Live')] [switch] $SkipInboxRules
     )
 
-    if ($PSCmdlet.ParameterSetName -eq 'Fixture') {
+    if (-not $Live) {
         $resolved = (Resolve-Path -Path $FixturePath -ErrorAction Stop).ProviderPath
         return [pscustomobject]@{
             PSTypeName  = 'M365BecAudit.Collector'

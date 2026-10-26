@@ -7,7 +7,7 @@
         PSUseConsistentIndentation = @{ Enable = $true; IndentationSize = 4; Kind = 'space' }
         PSUseConsistentWhitespace  = @{ Enable = $true; CheckOpenBrace = $true; CheckOpenParen = $true; CheckOperator = $false; CheckSeparator = $true; CheckInnerBrace = $true; CheckPipe = $true }
         PSPlaceOpenBrace           = @{ Enable = $true; OnSameLine = $true; NewLineAfter = $true; IgnoreOneLineBlock = $true }
-        PSPlaceCloseBrace          = @{ Enable = $true; NewLineAfter = $false; IgnoreOneLineBlock = $true; NoEmptyLineBefore = $false }
+        PSPlaceCloseBrace          = @{ Enable = $true; NewLineAfter = $true; IgnoreOneLineBlock = $true; NoEmptyLineBefore = $false }
         PSUseCompatibleSyntax      = @{ Enable = $true; TargetVersions = @('5.1', '7.4') }
     }
 }

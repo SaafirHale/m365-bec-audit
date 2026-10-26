@@ -1,3 +1,6 @@
+[Diagnostics.CodeAnalysis.SuppressMessageAttribute('PSUseDeclaredVarsMoreThanAssignments', '', Justification = 'Pester shares variables between BeforeAll and It blocks.')]
+param()
+
 BeforeAll {
     . (Join-Path -Path $PSScriptRoot -ChildPath 'TestHelpers.ps1')
     $catalogNames = InModuleScope M365BecAudit { @(Get-AuditDatasetCatalog | ForEach-Object { $_.Name }) }
@@ -64,9 +67,10 @@ Describe 'Collector contract' {
             Kind        = 'InMemory'
             Description = 'test double'
             Skip        = @('exoInboxRules')
-            ReadMeta    = { param($Collector) @{ collectedAt = '2026-10-01T00:00:00Z' } }
+            ReadMeta    = { param($Collector) $null = $Collector; @{ collectedAt = '2026-10-01T00:00:00Z' } }
             ReadDataset = {
                 param($Collector, $Definition, $Collected)
+                $null = $Collector, $Collected
                 switch ($Definition.Name) {
                     'securityDefaults' { [pscustomobject]@{ isEnabled = $true } }
                     'conditionalAccessPolicies' { , @() }

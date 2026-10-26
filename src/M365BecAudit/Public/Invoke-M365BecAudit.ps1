@@ -29,12 +29,12 @@ function Invoke-M365BecAudit {
         [switch] $PassThru
     )
 
-    switch ($PSCmdlet.ParameterSetName) {
-        'Fixture' { $Snapshot = Get-M365BecAuditSnapshot -FixturePath $FixturePath }
-        'Live' {
-            $Snapshot = Get-M365BecAuditSnapshot -Live -SkipExchange:$SkipExchange -SkipInboxRules:$SkipInboxRules
-            if ($SaveSnapshotPath) { $null = Save-M365BecAuditSnapshot -Snapshot $Snapshot -Path $SaveSnapshotPath }
-        }
+    if ($PSCmdlet.ParameterSetName -eq 'Fixture') {
+        $Snapshot = Get-M365BecAuditSnapshot -FixturePath $FixturePath
+    }
+    elseif ($Live) {
+        $Snapshot = Get-M365BecAuditSnapshot -Live -SkipExchange:$SkipExchange -SkipInboxRules:$SkipInboxRules
+        if ($SaveSnapshotPath) { $null = Save-M365BecAuditSnapshot -Snapshot $Snapshot -Path $SaveSnapshotPath -Confirm:$false }
     }
 
     $option = @{ StaleGuestDays = $StaleGuestDays; MaxGlobalAdmins = $MaxGlobalAdmins }

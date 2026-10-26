@@ -124,21 +124,22 @@ function Get-SmtpAddress {
     #   smtp:collector@mail.example.net
     # Legacy EX: addresses (internal recipients) are ignored.
     [CmdletBinding()]
-    [OutputType([string[]])]
+    [OutputType([string])]
     param([object[]]$Value)
 
-    $addresses = foreach ($item in @($Value)) {
+    $addresses = New-Object System.Collections.Generic.List[string]
+    foreach ($item in @($Value)) {
         if ($null -eq $item) { continue }
         $text = [string]$item
         $matched = [regex]::Matches($text, '(?i)smtp:([^\s\]\[<>"]+@[^\s\]\[<>"]+)')
         if ($matched.Count -gt 0) {
-            foreach ($m in $matched) { $m.Groups[1].Value.ToLowerInvariant() }
+            foreach ($m in $matched) { $addresses.Add($m.Groups[1].Value.ToLowerInvariant()) }
         }
         elseif ($text -match '^[^\s@\[\]]+@[^\s@\[\]]+$') {
-            $text.ToLowerInvariant()
+            $addresses.Add($text.ToLowerInvariant())
         }
     }
-    @($addresses | Select-Object -Unique)
+    $addresses | Select-Object -Unique
 }
 
 function Test-ExternalAddress {
@@ -168,6 +169,7 @@ function Get-MaxSeverity {
 function New-CheckResult {
     # The value every check function returns. The engine adds the check's
     # metadata (id, title, references) to turn it into a finding.
+    [Diagnostics.CodeAnalysis.SuppressMessageAttribute('PSUseShouldProcessForStateChangingFunctions', '', Justification = 'Builds an in-memory object; changes no state.')]
     [CmdletBinding()]
     [OutputType([hashtable])]
     param(
@@ -202,15 +204,17 @@ function Get-BreakGlassAccount {
     # Emergency access accounts: the UPNs passed in BreakGlassAccounts, or member
     # users whose UPN or display name matches BreakGlassPattern.
     [CmdletBinding()]
+    [OutputType([pscustomobject])]
     param($Snapshot, [hashtable]$Option)
 
     $users = @(Get-SnapshotData -Snapshot $Snapshot -Name 'users')
     $named = @($Option.BreakGlassAccounts | Where-Object { $_ } | ForEach-Object { $_.ToLowerInvariant() })
     if ($named.Count -gt 0) {
-        return @($users | Where-Object { $_.userPrincipalName -and $named -contains $_.userPrincipalName.ToLowerInvariant() })
+        $users | Where-Object { $_.userPrincipalName -and $named -contains $_.userPrincipalName.ToLowerInvariant() }
+        return
     }
-    @($users | Where-Object {
-            $_.userType -ne 'Guest' -and (
-                ($_.userPrincipalName -match $Option.BreakGlassPattern) -or ($_.displayName -match $Option.BreakGlassPattern))
-        })
+    $users | Where-Object {
+        $_.userType -ne 'Guest' -and (
+            ($_.userPrincipalName -match $Option.BreakGlassPattern) -or ($_.displayName -match $Option.BreakGlassPattern))
+    }
 }

@@ -25,10 +25,11 @@ function Get-SortedFinding {
 
 function Get-AuditSummary {
     [CmdletBinding()]
+    [OutputType([pscustomobject])]
     param([object[]]$Finding)
 
     $failing = @($Finding | Where-Object { $_.Status -eq 'Fail' })
-    [ordered]@{
+    [pscustomobject]@{
         Total       = @($Finding).Count
         Fail        = $failing.Count
         Warn        = @($Finding | Where-Object { $_.Status -eq 'Warn' }).Count
