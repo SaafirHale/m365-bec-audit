@@ -2,10 +2,7 @@
 
 Draft entry for `src/content/projects.ts` on saafirhale.com, in the shape of the site's `Project` type. Every claim below can be checked in this repository: the check list in `src/M365BecAudit/Private/CheckRegistry.ps1`, the scopes in `Get-M365BecAuditPermission`, the test count from `.\build.ps1`, the analyzer result from the same run.
 
-Before publishing:
-
-- Push the repository, then add the GitHub link to `links` and change `status` from `"personal"` to `"live"`.
-- If the audit has been run against a real tenant by then, a sentence saying so can be added to `body`. Until then, leave it out.
+If the audit is later run against a real tenant, a sentence saying so can be added to `body`. Until then, leave it out.
 
 ```ts
 {
@@ -28,7 +25,7 @@ Before publishing:
     "Pester",
     "PSScriptAnalyzer",
   ],
-  links: [],
-  status: "personal",
+  links: [{ label: "github.com/SaafirHale/m365-bec-audit", href: "https://github.com/SaafirHale/m365-bec-audit" }],
+  status: "live",
 },
 ```
